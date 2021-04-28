@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSPreferencePane">
+            <connections>
+                <outlet property="_window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+                <outlet property="textPaneVersion" destination="SGf-My-dA3" id="7bU-vJ-meb"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="≪ do not localize ≫" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" deferred="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5" userLabel="PrefPane" customClass="swiftclass" customModule="testpane" customModuleProvider="target">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="176" y="715" width="668" height="368"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="668" height="330"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SGf-My-dA3">
+                        <rect key="frame" x="28" y="137" width="612" height="56"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Label" id="VKf-uW-fl5">
+                            <font key="font" metaFont="system" size="48"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SGf-My-dA3" secondAttribute="trailing" constant="30" id="FH8-fW-Kfs"/>
+                    <constraint firstAttribute="bottom" secondItem="SGf-My-dA3" secondAttribute="bottom" constant="137" id="Rth-s9-22O"/>
+                    <constraint firstItem="SGf-My-dA3" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="30" id="VgM-XH-NBA"/>
+                    <constraint firstItem="SGf-My-dA3" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="137" id="hb8-Gb-muB"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="140" y="144"/>
+        </window>
+    </objects>
+</document>
